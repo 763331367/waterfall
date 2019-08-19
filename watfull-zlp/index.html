@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wat</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<h1><span>Pinterest</span></h1>
+	<div class="items"></div>
+	<p class="tips">点击</p>
+</body>
+
+</html>
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/template-web.js"></script>
+<script id='template' type="text/html">
+	{{each items}}
+	<div class="item">
+		<img src="{{$value.path}}" alt="">
+		<h3>{{$value.title}}</h3>
+		<p>{{$value.text}}</p>
+	</div>
+	{{/each}}
+</script>
+<script src="./js/masonry.pkgd.min.js"></script>
+<script src="js/index.js"></script>

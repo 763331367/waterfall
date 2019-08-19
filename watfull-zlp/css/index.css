@@ -1,0 +1,75 @@
+/* 清除默认样式 */
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+    transition: all 1s;
+}
+
+/* 主体 */
+body {
+    background-color: #4b495f;
+}
+
+/* 标题 */
+h1{
+    text-align: center;
+    padding: 20px;
+}
+h1 span{
+    color: #fff;
+    text-shadow: 10px 10px 10px #2c2c2c;
+}
+
+/* 容器 */
+.items {
+    padding: 50px;
+}
+.item {
+    background-color: #fff;
+    width: 250px;
+    margin: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px #2c2c2c;
+}
+.items img{
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+.item p{
+    font-size: 13px;
+    line-height: 20px;
+    text-indent: 12px;
+    color: #797979;
+    padding: 0 10px 20px 10px;
+}
+.item h3{
+    padding: 15px 10px;
+}
+
+/* 按钮 */
+.tips{
+    width: 280px;
+    height: 40px;
+    margin: 30px auto 30px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #2c2c2c;
+    background-color: #ccc;
+    transition: 0.3s;
+}
+.tips:hover{
+    transform: scale(1.1);
+}
+.tips.click{
+    transition: 0.1s;
+    transform: translate(10px,10px);
+}
+.tips.disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
